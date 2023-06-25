@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LastPass...</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="beauty.css">
+</head>
+
+<body>
+
+
+
+  <nav class="navbar navbar-expand-lg bg-dark-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: rgb(197, 0, 0); font-family: cursive; font-size: 25px">LastPass...</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Contact Us</a>
+          <a class="nav-link ">Log In</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+
+  <div class="container d-flex align-items-center justify-content-center">
+    <div class="card">
+      <h5 style="font-family: monospace ; font-size: 35px; text-align: center;">Password Generator</h5>
+      <div class="card-body">
+
+        <form>
+          <div style="width: 500px">
+            <input id="passBox" type="text" class="form-control" aria-label="Text input with checkbox" value = "Password" disabled>
+          </div>
+          
+          <br>
+          <div class="row">
+            <p>Password Length<span id = "sliderValue" style="margin-left: 70%"></span></p>
+            
+          </div>
+          <input id = "inputSlider" type="range" class="form-range" min="2" max="30" id="customRange2" value = "8">
+
+          <br>
+          <div class="input-group mb-3">
+            <label class="form-check-label" for="gridCheck1">
+              Include Uppercase
+            </label>
+            <div class="chk" style="margin-left: 70.2%">
+              <input id="uppercase" type="checkbox">
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <label class="form-check-label" for="gridCheck1">
+              Include Lowercase
+            </label>
+            <div class="chk" style="margin-left: 70.5%">
+              <input id="lowercase" type="checkbox">
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <label class="form-check-label" for="gridCheck1">
+              Include Numbers
+            </label>
+            <div class="chk" style="margin-left: 72%">
+              <input id="numbers" type="checkbox">
+            </div>
+          </div>
+
+          <div class="input-group mb-3">
+            <label class="form-check-label" for="gridCheck1">
+              Include Symbols
+            </label>
+            <div class="chk" style="margin-left: 73%">
+              <input id="symbols" type="checkbox">
+            </div>
+          </div>
+        </form>
+
+        <div class="d-grid gap-2">
+          <button id = "genbtn" class="btn btn-primary">
+             Generate Password
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+<script src="app.js"></script>
+
+</html>

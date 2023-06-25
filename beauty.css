@@ -1,0 +1,24 @@
+.container {
+  height: 92vh;
+}
+
+.custom-margin-left {
+  margin-left: 140px;
+  /* Adjust the value as needed */
+}
+
+body{
+  background : linear-gradient(to right bottom, pink,lightblue);
+}
+
+.card{
+  border : 0.5px solid white;
+  border-radius: 10px;
+  padding : 28px 32px;
+  background: transparent;
+  box-shadow: 8px 8px 4px #909090, 8px 8px 0px #575757;
+}
+
+.nav-link{
+  color: black;
+}
